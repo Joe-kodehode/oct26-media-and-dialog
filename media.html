@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Media</title>
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>HTML Media</h1>
+        <p>
+          HTML lets us add images, video, audio, and other media to a webpage.
+        </p>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- VIDEO -->
+      <section>
+        <h2>Video</h2>
+        <p>We use the <code>&lt;video&gt;</code> tag to add a video.</p>
+        <p>
+          The <code>controls</code> attribute adds play, pause, volume, and
+          fullscreen buttons.
+        </p>
+
+        <!-- Video demo goes here -->
+        <video controls loop muted poster="media/paint.jpg">
+          <source src="media/example-video.mp4" type="video/mp4" />
+          <source src="media/example-video.avi" type="video/x-msvideo" />
+          Your browser does not support the video formats.
+        </video>
+      </section>
+
+      <!-- VIDEO ATTRIBUTES -->
+      <section>
+        <h2>Useful video attributes</h2>
+        <p>Videos can use extra attributes to change how they behave.</p>
+
+        <div class="example-box">
+          <p><strong>Common attributes:</strong></p>
+          <ul>
+            <li>controls = show video controls</li>
+            <li>autoplay = starts video on page load</li>
+            <li>loop = repeats the video</li>
+            <li>muted = starts with no sound</li>
+            <li>poster = image shown before video plays</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- AUDIO -->
+      <section>
+        <h2>Audio</h2>
+        <p>We use the <code>&lt;audio&gt;</code> tag to add sound or music.</p>
+
+        <!-- Audio demo goes here -->
+        <audio autoplay loop controls muted>
+          <source src="media/funk.mp3" type="audio/mpeg" />
+          Your browser does not support the audio.
+        </audio>
+      </section>
+
+      <!-- AUDIO ATTRIBUTES -->
+      <section>
+        <h2>Useful audio attributes</h2>
+        <p>Audio uses many of the same attributes as video.</p>
+
+        <div class="example-box">
+          <p><strong>Common attributes:</strong></p>
+          <ul>
+            <li>controls = show audio controls</li>
+            <li>autoplay = starts on page load</li>
+            <li>loop = repeats the audio</li>
+            <li>muted = starts with no sound</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- IFRAME -->
+      <section>
+        <h2>Iframe</h2>
+        <p>
+          We use the <code>&lt;iframe&gt;</code> tag to embed another webpage or
+          video inside our page.
+        </p>
+
+        <!-- iframe demo goes here -->
+        <iframe
+          title="google maps"
+          src="https://www.google.com/maps/embed?..."
+          frameborder="0"
+        ></iframe>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/svrdRAoIlxM?si=11K0h0AMnQg__3gW"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <!-- IFRAME NOTES -->
+      <section>
+        <h2>Important iframe attributes</h2>
+        <p>Iframes often need extra attributes to work well.</p>
+
+        <div class="example-box">
+          <p><strong>Common attributes:</strong></p>
+          <ul>
+            <li>src = sets the source</li>
+            <li>title = description for accessibility</li>
+            <li>allowfullscreen = lets the video go fullscreen</li>
+            <li>width and height = set the size of the iframe</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
